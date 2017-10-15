@@ -47,7 +47,7 @@
                                 </subviews>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u0r-iO-d0U">
-                                <rect key="frame" x="110.5" y="231" width="100" height="30"/>
+                                <rect key="frame" x="110" y="231" width="100" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="vqd-L6-euY"/>
                                 </constraints>
@@ -55,33 +55,41 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2C6-Ve-78X">
-                                <rect key="frame" x="110.5" y="185" width="100" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="elV-q6-6MM">
+                                <rect key="frame" x="110" y="180" width="100" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="Hs8-j2-TP4"/>
+                                    <constraint firstAttribute="width" constant="100" id="6RE-SL-9n9"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kQz-Af-wTC">
+                                <rect key="frame" x="135.5" y="128" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="u0r-iO-d0U" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5KK-yX-bNZ"/>
                             <constraint firstItem="9ap-OO-AXb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7Ah-Au-pLi"/>
                             <constraint firstItem="pkW-ad-r4X" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7kg-ps-7zZ"/>
+                            <constraint firstItem="u0r-iO-d0U" firstAttribute="top" secondItem="elV-q6-6MM" secondAttribute="bottom" constant="21" id="8vg-1f-nX2"/>
                             <constraint firstItem="Y2s-Ml-IyK" firstAttribute="top" secondItem="u0r-iO-d0U" secondAttribute="bottom" constant="20" id="Kv5-WR-owH"/>
                             <constraint firstItem="pkW-ad-r4X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SY8-4s-dGy"/>
                             <constraint firstItem="9ap-OO-AXb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Z9Y-Rk-xFf"/>
                             <constraint firstItem="1og-34-Mfo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cwI-xK-Gf7"/>
-                            <constraint firstItem="2C6-Ve-78X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mO9-aR-zHF"/>
-                            <constraint firstItem="u0r-iO-d0U" firstAttribute="top" secondItem="2C6-Ve-78X" secondAttribute="bottom" constant="16" id="ngr-ym-LUV"/>
+                            <constraint firstItem="elV-q6-6MM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gLp-gJ-1rW"/>
+                            <constraint firstItem="elV-q6-6MM" firstAttribute="top" secondItem="kQz-Af-wTC" secondAttribute="bottom" constant="21" id="kdg-Q2-GAq"/>
                             <constraint firstItem="1og-34-Mfo" firstAttribute="top" secondItem="9ap-OO-AXb" secondAttribute="bottom" constant="16.5" id="sgJ-cv-hnA"/>
+                            <constraint firstItem="kQz-Af-wTC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="yXm-Yh-pF8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="addSubtractSwitch" destination="kQz-Af-wTC" id="yaM-z5-gq2"/>
+                        <outlet property="bottomTextField" destination="u0r-iO-d0U" id="CmA-gb-8Le"/>
                         <outlet property="myLabel" destination="9ap-OO-AXb" id="MqL-86-Z9k"/>
+                        <outlet property="topTextField" destination="elV-q6-6MM" id="MBN-5f-d4D"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

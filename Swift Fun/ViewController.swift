@@ -9,12 +9,34 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var myLabel: UILabel!
+    
     var buttonCount = 0
+    @IBOutlet weak var myLabel: UILabel!
+    
+
+    @IBOutlet weak var addSubtractSwitch: UISwitch!
+    
+    @IBOutlet weak var topTextField: UITextField!
+    @IBOutlet weak var bottomTextField: UITextField!
     
     
     @IBAction func buttonTapped(_ sender: Any) {
+        
+        
+        let sum = Double(bottomTextField.text!)! + Double(topTextField.text!)!
+        myLabel.text = "top: \(topTextField.text!) + bot: \(bottomTextField.text!) = \(sum)"
+        
+        let sunny = addSubtractSwitch.isOn
+        
+        if(sunny == true)
+        {
+            myLabel.text = "add"
+        }
+        else{
+            myLabel.text = "subtract"
+        }
+        
+        /*
         buttonCount = buttonCount + 1
         
         if (buttonCount == 10)
@@ -25,7 +47,9 @@ class ViewController: UIViewController {
         else if (buttonCount == 12)
         {
             view.backgroundColor = UIColor.cyan
-            myLabel.text = "Swift is fun!!"        }
+            myLabel.text = "Swift is fun!!"
+        }
+        */
     }
     
     
