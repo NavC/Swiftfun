@@ -20,9 +20,12 @@ class ViewController: UIViewController {
         if (buttonCount == 10)
         {
             view.backgroundColor = UIColor.lightGray
-            myLabel.text = "Nick is cool"
+            myLabel.text = "Swift is fun"
         }
-        
+        else if (buttonCount == 12)
+        {
+            view.backgroundColor = UIColor.cyan
+            myLabel.text = "Swift is fun!!"        }
     }
     
     
